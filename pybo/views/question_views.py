@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template
 
+
 from pybo.models import Question
 from ..forms import QuestionForm
 
