@@ -1,18 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Korean fish</title>
-    <link rel="stylesheet" herf="css/bootstrap.css"/>
-
-</head>
+{% extends 'base.html' %}
+{% block content %}
 <body>
-    <textarea class="">
-
-    </textarea>
-    <button type="button" class="btn btn-dark">번역하기</button>
-    <textarea></textarea>
+    <div class="row header">
+        <img class="row-1 logo_img" src="{{ url_for('static', filename='img/shark.png') }}"/>
+        <div class="row-1 logo_word">Korean FISH<br/>Korean Fast and Interactive Style Handler</div>
+        
+    </div>
+    <div class="body">
+        <div class="input">
+            <button type="button" class="btn btn-dark">번역하기</button>
+        </div>
+        
+        <div class="output"></div>
+        
+    </div>
 </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="'js/bootstrap.js"></script>
+
+{% endblock %}
